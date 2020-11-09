@@ -1,0 +1,3 @@
+- class Note
+-constructor->init text=""
+-get note function
