@@ -1,3 +1,11 @@
-- class Note
--constructor->init text=""
--get note function
+class Note{
+
+  constructor(string){
+    this.content = string;
+  };
+
+  getContent(){
+    return this.content;
+  };
+
+}
