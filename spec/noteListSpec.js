@@ -1,19 +1,15 @@
 (function(exports){
   var noteList = new NoteList();
-  var note = {
-    content: 'test string',
-    getContent: () => { return this.content }
-  };
 
   function noteListHasArray() {
-    assert.isTrue(noteList.getList().length === 0);
+    assert.isTrue(noteList.list.length === 0);
   };
 
   function noteListCanStoreNote() {
     noteList.addNote('testing');
     noteList.addNote('testing too');
-    assert.isTrue(noteList.getList()[0].getContent() === 'testing');
-    assert.isTrue(noteList.getList()[1].getContent() === 'testing too');
+    assert.isTrue(noteList.list[0].content === 'testing');
+    assert.isTrue(noteList.list[1].content === 'testing too');
   };
 
   noteListHasArray();

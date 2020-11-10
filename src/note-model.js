@@ -1,11 +1,11 @@
 class Note{
 
   constructor(string){
-    this.content = string;
+    this._content = string;
   };
 
-  getContent(){
-    return this.content;
+  get content(){
+    return this._content;
   };
 
 }

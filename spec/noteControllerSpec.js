@@ -8,7 +8,7 @@
   function canReplaceHTML() {
     testAppDiv = document.getElementById('app');
     noteController.insertHTML();
-    assert.isTrue(testAppDiv.innerHTML === "<ul><li><div>Favourite drink: seltzer</div></li></ul>");
+    assert.isTrue(testAppDiv.innerHTML === "<ul><li><div>Favourite drink: sel...</div></li></ul>");
   }
 
   canBeInstantiated();
