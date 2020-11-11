@@ -9,7 +9,8 @@
     <script src="src/note-list-model.js"></script>
     <script src="src/note-list-view-model.js"></script>
     <script src="src/note-controller-model.js" defer></script>
-    <script src="src/single-note-view.js"></script>
+    <script src="src/single-note-view-model.js"></script>
+    <script src="src/index.js" defer></script>
 
     <!-- include spec files here... -->
     <script src="spec/SpecHelper.js"></script>
@@ -22,7 +23,10 @@
 
   <body>
     <div id='app'>
-      Hello!
+      <input type="text" id="note-input">
+      <button id="add-note">Add</button>
+      <ul id='note-list'>
+      </ul>
     </div>
   </body>
 </html>

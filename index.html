@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <head>
   <title>Notes app</title>
+  <link type="text/css" rel="stylesheet" href="public/styles/style.css" >
   <script src="src/note-model.js" defer></script> 
   <script src="src/note-list-model.js" defer></script> 
   <script src="src/note-list-view-model.js" defer></script> 
+  <script src="src/single-note-view-model.js" defer></script>
   <script src="src/note-controller-model.js" defer></script> 
+  <script src="src/index.js" defer></script>
 </head>
 <body>
   <div id='app'>
-    Hello!
+    <input type="text" id="note-input">
+    <button id="add-note">Add</button>
+    <ul id='note-list'>
+    </ul>
+    <button id="go-back">All Notes</button>
   </div>
 </body>

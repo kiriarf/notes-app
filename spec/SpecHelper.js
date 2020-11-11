@@ -5,7 +5,7 @@ var assert = {
         "Assertion failed: " + assertionToCheck + " is not truthy"
       );
     } else {
-      console.log("tests pass");
+      console.log("  Pass");
     }
   },
 };

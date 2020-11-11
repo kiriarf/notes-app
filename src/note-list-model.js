@@ -10,5 +10,6 @@ class NoteList {
   addNote(string){
     let note = new Note(string);
     this._list.push(note);
+    note.id = this._list.indexOf(note);
   }
 }
