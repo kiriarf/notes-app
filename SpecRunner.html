@@ -5,12 +5,12 @@
     <title>Homemade Spec Runner v1.0.0</title>
 
     <!-- include source files here... -->
-    <script src="src/note-model.js"></script>
-    <script src="src/note-list-model.js"></script>
-    <script src="src/note-list-view-model.js"></script>
-    <script src="src/note-controller-model.js" defer></script>
-    <script src="src/single-note-view-model.js"></script>
-    <script src="src/index.js" defer></script>
+    <script src="public/js/note-model.js"></script>
+    <script src="public/js/note-list-model.js"></script>
+    <script src="public/js/note-list-view-model.js"></script>
+    <script src="public/js/note-controller-model.js" defer></script>
+    <script src="public/js/single-note-view-model.js"></script>
+    <script src="public/js/index.js" defer></script>
 
     <!-- include spec files here... -->
     <script src="spec/SpecHelper.js"></script>
@@ -23,10 +23,15 @@
 
   <body>
     <div id='app'>
+      <!-- <form action="/#" id="text" method="POST">
+        <input type="text">
+      </form> -->
+  
       <input type="text" id="note-input">
       <button id="add-note">Add</button>
       <ul id='note-list'>
       </ul>
+      <button id="go-back">All Notes</button>
     </div>
   </body>
 </html>
